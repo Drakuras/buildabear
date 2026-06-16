@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build-A-Bear Checkout Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="top-nav">
+        <a href="#" class="accessibility-policy">Accessibility Policy</a>
+    </div>
+
+    <div class="shipping-banner">
+        <p>Buy Online, Pick Up In Store Available</p>
+    </div>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://www.buildabear.com/on/demandware.static/-/Library-Sites-BuildABearSharedLibrary/default/dwb6027232/images/header/logo-bab-peek.png"
+                    alt="Build-A-Bear" height="40">
+            </div>
+            <div class="header-icons">
+                <i class="fa fa-user" title="Log In"></i>
+                <i class="fa fa-heart" title="Wishlist"></i>
+                <i class="fa fa-shopping-bag" title="Bag"><span class="bag-count">1</span></i>
+            </div>
+        </div>
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <input type="text" placeholder="What are you looking for?">
+                <i class="fa fa-search search-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="offers-banner">
+        <h3>The Offers You Loved</h3>
+        <p>See all the special offers we carry to make sure you get the best deal.</p>
+        <a href="#">SHOP MORE OFFERS ></a>
+    </div>
+
+    <main class="cart-container">
+        <div class="cart-items">
+            <!-- Product Item -->
+            <div class="cart-item">
+                <img src="https://www.buildabear.com/dw/image/v2/BBNG_PRD/on/demandware.static/-/Sites-buildabear-master/default/dw39820f92/30250701534747~x20137086.jpg?sw=140&sh=140&sm=fit"
+                    alt="Sweet Dreams Baby!" class="item-image">
+                <div class="item-details">
+                    <div class="item-price">$88.00</div>
+                    <div class="item-title">Sanrio&reg; Hello Kitty&reg; and Friends Strawberry Ice Cream
+                        Pochacco&trade; Plush</div>
+                    <div class="item-desc">Stuffed & Ready to Play<br>Undressed: Dress this furry</div>
+                    <div class="item-actions">
+                        <a href="#" class="action-link">Customize</a> | <a href="#" class="action-link">Remove</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-options">
+                <div class="add-dropdown">Add... <i class="fa fa-chevron-down"></i></div>
+                <div class="qty-dropdown">Qty 1 <i class="fa fa-chevron-down"></i></div>
+            </div>
+        </div>
+
+        <div class="order-summary-container">
+            <div class="order-total-row">
+                <span>Order Total</span>
+                <span id="order-total-amount">$88.00</span>
+            </div>
+            <div id="promo-lines-container"></div>
+
+            <button class="btn btn-blue btn-full btn-checkout">Checkout</button>
+            <button class="btn btn-yellow btn-full btn-paypal"><i>PayPal</i></button>
+
+            <div class="installment-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1448" height="609" viewBox="0 0 1448 609" fill="none"
+                    style="height: 12px; width: auto;">
+                    <path
+                        d="M0 304.493C0 180.585 0 118.631 30.3995 74.5079C42.2947 57.2427 57.2427 42.2947 74.5079 30.3995C118.631 0 180.585 0 304.493 0H1142.75C1266.65 0 1328.61 0 1372.73 30.3995C1390 42.2947 1404.95 57.2427 1416.84 74.5079C1447.24 118.631 1447.24 180.585 1447.24 304.493C1447.24 428.402 1447.24 490.356 1416.84 534.479C1404.95 551.744 1390 566.692 1372.73 578.587C1328.61 608.987 1266.65 608.987 1142.75 608.987H304.494C180.585 608.987 118.631 608.987 74.5079 578.587C57.2427 566.692 42.2947 551.744 30.3995 534.479C0 490.356 0 428.402 0 304.493Z"
+                        fill="#FFA8CD" />
+                    <path
+                        d="M1166.17 389.005C1140.92 389.005 1121.24 368.125 1121.24 342.771C1121.24 317.416 1140.92 296.536 1166.17 296.536C1191.42 296.536 1211.1 317.416 1211.1 342.771C1211.1 368.125 1191.42 389.005 1166.17 389.005ZM1153.54 437.85C1175.08 437.85 1202.56 429.647 1217.79 397.581L1219.27 398.327C1212.59 415.851 1212.59 426.292 1212.59 428.902V433.003H1266.8V252.538H1212.59V256.64C1212.59 259.25 1212.59 269.69 1219.27 287.214L1217.79 287.96C1202.56 255.894 1175.08 247.691 1153.54 247.691C1101.93 247.691 1065.54 288.706 1065.54 342.771C1065.54 396.835 1101.93 437.85 1153.54 437.85ZM971.216 247.691C946.707 247.691 927.397 256.267 911.801 287.96L910.316 287.214C917 269.69 917 259.25 917 256.64V252.538H862.784V433.003H918.485V337.923C918.485 312.942 932.968 297.281 956.362 297.281C979.757 297.281 991.268 310.704 991.268 337.55V433.003H1046.97V318.162C1046.97 277.147 1015.03 247.691 971.216 247.691ZM782.203 287.96L780.717 287.214C787.401 269.69 787.401 259.25 787.401 256.64V252.538H733.186V433.003H788.887L789.258 346.126C789.258 320.772 802.626 305.484 824.536 305.484C830.477 305.484 835.305 306.23 840.875 307.722V252.538C816.366 247.318 794.457 256.64 782.203 287.96ZM605.073 389.005C579.821 389.005 560.14 368.125 560.14 342.771C560.14 317.416 579.821 296.536 605.073 296.536C630.324 296.536 650.005 317.416 650.005 342.771C650.005 368.125 630.324 389.005 605.073 389.005ZM592.447 437.85C613.985 437.85 641.464 429.647 656.689 397.581L658.174 398.327C651.49 415.851 651.49 426.292 651.49 428.902V433.003H705.706V252.538H651.49V256.64C651.49 259.25 651.49 269.69 658.174 287.214L656.689 287.96C641.464 255.894 613.985 247.691 592.447 247.691C540.83 247.691 504.439 288.706 504.439 342.771C504.439 396.835 540.83 437.85 592.447 437.85ZM426.828 433.003H482.53V172H426.828V433.003ZM385.981 172H329.165C329.165 218.608 300.572 260.368 257.125 290.197L240.043 302.129V172H181V433.003H240.043V303.62L337.706 433.003H409.747L315.797 309.213C358.501 278.266 386.352 230.166 385.981 172Z"
+                        fill="#0B051D" />
+                </svg>
+                <span>Pay in 4 payments of $11.25</span>
+            </div>
+
+            <div class="delivery-options">
+                <label class="delivery-option">
+                    <input type="radio" name="delivery" checked>
+                    <span class="radio-custom"></span>
+                    <i class="fa fa-truck truck-icon"></i> <span class="delivery-text">Free Regular Delivery (3-12
+                        Days)</span>
+                </label>
+                <label class="delivery-option">
+                    <input type="radio" name="delivery">
+                    <span class="radio-custom"></span>
+                    <i class="fa fa-store store-icon"></i>
+                    <div class="store-text">
+                        <span>In store for Delivery</span><br>
+                        <span class="store-avail">Check Store Availability</span><br>
+                        <a href="#" class="select-store">Select Store ></a>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="foundation-banner">
+            <div class="foundation-img-container">
+                <img src="https://www.buildabear.com/on/demandware.static/-/Library-Sites-BuildABearSharedLibrary/default/dw937098d8/images/checkout/bab-foundation-component_1.png"
+                    alt="Foundation" class="foundation-hero">
+                <div class="giving-back-badge">Giving Back</div>
+            </div>
+            <p class="foundation-text">Making a single, family, or children a part of the mission. Donate ❤️ to the
+                Foundation today.</p>
+            <div class="donation-controls">
+                <select class="donation-dropdown">
+                    <option>$1.00</option>
+                    <option>$5.00</option>
+                    <option>$10.00</option>
+                </select>
+            </div>
+            <button class="btn btn-white btn-full donation-btn">Add Donation</button>
+            <a href="#" class="foundation-link">Click here to learn more about the cause ></a>
+        </div>
+
+        <div class="promo-code-section" id="promo-app">
+            <label for="promo-input">Enter Promo Code</label>
+            <div class="promo-input-group">
+                <input type="text" id="promo-input" placeholder="Promo Code">
+                <button id="promo-btn"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <p id="promo-message" class="promo-msg"></p>
+        </div>
+
+        <div class="accordion-section">
+            <div class="accordion-item">
+                <span>Shipping & Handling | Returns</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="klarna-info">
+                <span class="klarna-badge">Klarna.</span>
+                <span>4 interest-free payments available on orders above $35. <a href="#">Learn more</a></span>
+            </div>
+        </div>
+
+        <div class="more-stuff-section">
+            <h3 class="cursive-title">More Stuff To Love</h3>
+            <div class="cross-sell-item">
+                <img src="https://www.buildabear.com/dw/image/v2/BDBG_PRD/on/demandware.static/-/Sites-buildabear-master/default/dwdd7ff35f/31317_155_2x.jpg?sw=600&sh=600&sm=fit"
+                    alt="Sweet Dreams Pajamas - Onesie">
+                <p class="cross-sell-title">Sweet Dreams&trade; Pajamas - Onesie</p>
+                <div class="cross-sell-price-row">
+                    <span class="cross-sell-price">$10.00</span>
+                </div>
+                <button class="btn btn-blue btn-full mt-10">Quick Add <i class="fa fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <div class="bonus-club-banner">
+        <img src="https://www.buildabear.com/on/demandware.static/-/Sites-buildabear-us-Library/default/dwdcd04918/images/2022/bonus-club-logo.png"
+            alt="Bonus Club" height="40" class="filter-white">
+        <h2>LOG IN NOW TO GET THE INSIDE STUFF!</h2>
+        <p>Join the reward club for great exclusive discounts, previews on new products and more.</p>
+        <button class="btn btn-white">Join Now</button>
+    </div>
+
+    <div class="trust-badge">
+        <img src="https://sealserver.trustwave.com/cert.php?customerId=cc5128ff-3aa2-4c20-a612-4ee10ecf62c0&size=105x54&style=normal"
+            alt="Trustwave Trusted Commerce">
+        <p>We are a committed sponsor to local causes and volunteers. Reach out today for more info.</p>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-newsletter">
+            <h3>Add a Little More ❤️ to Your Inbox!</h3>
+            <p>Don't miss out on what's new at Build-A-Bear!</p>
+            <div class="footer-input-group">
+                <input type="email" placeholder="Enter Your Email">
+                <button class="btn btn-blue">Sign Up<br>Now!</button>
+            </div>
+            <label class="terms-label">
+                <input type="checkbox">
+                <span>By checking this box, I agree I want to receive promotional emails... View our <a href="#">Privacy
+                        Policy</a>.</span>
+            </label>
+        </div>
+
+        <div class="footer-accordions">
+            <div class="footer-accordion">
+                <span>Customer Care</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="footer-accordion">
+                <span>About Us</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="footer-accordion">
+                <span>Explore More</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="footer-accordion">
+                <span>Contact Us</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <div class="country-selector">
+            🇺🇸 United States
+        </div>
+
+        <div class="social-icons">
+            <i class="fab fa-tiktok"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+
+        <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Do Not Sell My Personal Information</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Accessibility</a>
+            <a href="#">California Supply Chains</a>
+            <a href="#">Do Not Sell My Personal Info</a>
+
+            <p class="copyright">©2026 Build-A-Bear Workshop, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
